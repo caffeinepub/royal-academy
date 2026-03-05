@@ -1,0 +1,83 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update content to Marathi, police aspirants context, and Instagram-sourced imagery",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Update all frontend UI text, navigation labels, section headings, button labels, placeholder text, and static strings throughout the site to Marathi language",
+      "acceptanceCriteria": [
+        "All navigation links are in Marathi",
+        "Hero section heading, tagline, and CTA buttons are in Marathi",
+        "About, Programs, Gallery, and Contact section headers and body text are in Marathi",
+        "Footer copyright and attribution text is in Marathi",
+        "No English UI strings remain visible to the user"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Replace all navigation link labels (Home, About, Programs, Gallery, Contact) and logo alt text with Marathi equivalents. Update mobile menu button aria-label to Marathi."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update CTA button labels ('Explore Programs' and 'Contact Us') to Marathi. Keep the academy name and tagline fetched from backend, which will already be in Marathi per REQ-6."
+        },
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "modify",
+          "description": "Replace section header title ('About Us') with Marathi using the SectionHeader component. Update stats grid labels (e.g., 'Years of Excellence', 'Expert Instructors', 'Success Rate', 'Students Trained') to Marathi equivalents relevant to police aspirant training."
+        },
+        {
+          "path": "frontend/src/components/Programs.tsx",
+          "operation": "modify",
+          "description": "Replace section header title ('Our Programs') and subtitle with Marathi. Update category filter button labels ('All', category names) to Marathi. Update loading skeleton aria-label and empty state messages to Marathi."
+        },
+        {
+          "path": "frontend/src/components/Gallery.tsx",
+          "operation": "modify",
+          "description": "Replace section header title ('Gallery') with Marathi. Update image alt text to describe police training scenes in Marathi. Update lightbox modal close button aria-label and navigation button labels to Marathi."
+        },
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Replace section header title ('Get in Touch') with Marathi. Update contact card labels ('Email Us', 'Follow Us', 'Visit Us') and descriptions to Marathi. Update footer copyright text and 'Powered by ICP' attribution to Marathi."
+        },
+        {
+          "path": "frontend/src/components/SectionHeader.tsx",
+          "operation": "modify",
+          "description": "No code changes needed—this component receives title and subtitle as props. Ensure it correctly renders Marathi text with proper typography and spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Replace all current generated placeholder images with new images visually inspired by the Royal Academy Instagram account depicting police aspirant training themes",
+      "acceptanceCriteria": [
+        "Hero banner image depicts a police training academy setting",
+        "Gallery images show training activities relevant to police aspirants",
+        "Logo/emblem image reflects Royal Academy branding style from their Instagram",
+        "All images are served from frontend/public/assets/generated as static assets",
+        "No broken image links remain on the page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Update logo image source to reference the new generated emblem at frontend/public/assets/generated/academy-logo.dim_200x200.png. Update alt text to Marathi description of the emblem."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update hero background image source to reference the new generated banner at frontend/public/assets/generated/hero-banner.dim_1920x1080.png. Ensure the image path is correct and the overlay styling remains intact."
+        },
+        {
+          "path": "frontend/src/components/Gallery.tsx",
+          "operation": "modify",
+          "description": "Update all four gallery image sources to reference the new generated images: frontend/public/assets/generated/gallery-1.dim_800x600.png (physical fitness drills), frontend/public/assets/generated/gallery-2.dim_800x600.png (classroom study), frontend/public/assets/generated/gallery-3.dim_800x600.png (drill commands training), and frontend/public/assets/generated/gallery-4.dim_800x600.png (group photo). Update alt text for each image to Marathi descriptions of the training scenes."
+        }
+      ]
+    }
+  ]
+}

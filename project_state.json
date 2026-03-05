@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Create a website for the Instagram page instagram.com/royal_academy_16 (Royal Academy). The site is a training academy for police aspirants. All content should be in Marathi language. Images should be sourced/inspired from their Instagram account.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Royal Academy police training academy emblem with shield, star, and Marathi text, formal crest style (academy-logo.dim_200x200.png)\n- Wide banner of police aspirants in uniform standing in formation on a parade ground, dramatic lighting, patriotic atmosphere (hero-banner.dim_1920x1080.png)\n- Police aspirants doing physical fitness drills outdoors, morning light, energetic (gallery-1.dim_800x600.png)\n- Students in a classroom studying for competitive exams, books and notes, focused atmosphere (gallery-2.dim_800x600.png)\n- Police aspirants practicing drill commands on a training ground, uniformed instructor leading (gallery-3.dim_800x600.png)\n- Group photo of police aspirant batch in formal uniform, academy building in background (gallery-4.dim_800x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-multi-section-landing-page-for-royal-academy-with-the-following-sections-hero-name-tagline-call-to-action-about-us-programs-courses-grid-gallery-photo-showcase-and-contact-footer-all-content-is-fetched-from-the-backend",
+      "title": "Build a multi-section landing page for Royal Academy with the following sections: Hero (name + tagline + call-to-action), About Us, Programs/Courses grid, Gallery (photo showcase), and Contact/Footer. All content is fetched from the backend.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-refined-prestigious-academic-visual-theme-throughout-the-site-deep-navy-and-gold-color-palette-serif-and-elegant-sans-serif-typography-clean-whitespace-driven-layout-subtle-decorative-flourishes-on-section-headers-and-smooth-scroll-animations-maintain-this-style-consistently-across-all-sections",
+      "title": "Apply a refined, prestigious academic visual theme throughout the site: deep navy and gold color palette, serif and elegant sans-serif typography, clean whitespace-driven layout, subtle decorative flourishes on section headers, and smooth scroll animations. Maintain this style consistently across all sections.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-responsive-navigation-bar-with-the-royal-academy-logo-name-links-to-all-page-sections-home-about-programs-gallery-contact-and-a-sticky-header-that-becomes-subtly-styled-on-scroll",
+      "title": "Create a responsive navigation bar with the Royal Academy logo/name, links to all page sections (Home, About, Programs, Gallery, Contact), and a sticky header that becomes subtly styled on scroll.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-all-generated-images-hero-banner-gallery-photos-logo-emblem-as-static-assets-from-frontend-public-assets-generated",
+      "title": "Render all generated images (hero banner, gallery photos, logo emblem) as static assets from frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-frontend-ui-text-navigation-labels-section-headings-button-labels-placeholder-text-and-static-strings-throughout-the-site-to-marathi-language-this-includes-navigation-links-home-about-programs-gallery-contact-hero-cta-buttons-section-titles-in-about-programs-gallery-and-contact-footer",
+      "title": "Update all frontend UI text, navigation labels, section headings, button labels, placeholder text, and static strings throughout the site to Marathi language. This includes Navigation links (Home, About, Programs, Gallery, Contact), Hero CTA buttons, section titles in About, Programs, Gallery, and Contact/Footer.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-current-generated-placeholder-images-hero-banner-gallery-photos-logo-emblem-with-new-images-visually-inspired-by-the-royal-academy-instagram-account-instagram-com-royal-academy-16-images-should-depict-police-aspirant-training-themes-students-in-uniform-physical-training-drills-classroom-study-sessions-and-the-academy-logo-emblem-keep-all-images-as-static-assets-in-frontend-public-assets-generated",
+      "title": "Replace all current generated placeholder images (hero banner, gallery photos, logo emblem) with new images visually inspired by the Royal Academy Instagram account (instagram.com/royal_academy_16). Images should depict police aspirant training themes: students in uniform, physical training drills, classroom study sessions, and the academy logo/emblem. Keep all images as static assets in frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a website inspired by the Royal Academy Instagram page (instagram.com/royal_academy_16)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create a backend actor that stores static data for the Royal Academy: institution name, tagline, description, contact email, and a list of programs/courses (each with title, description, and category).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Update all website content to Marathi language",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Update site context: Royal Academy is a training academy for police aspirants — update all content, programs, and descriptions accordingly",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Use images from the Royal Academy Instagram account (instagram.com/royal_academy_16) instead of generated placeholder images",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update all backend hardcoded data (academy name, tagline, description, contact info, and all course/program titles, descriptions, and categories) to Marathi language, reflecting Royal Academy as a training academy for police aspirants. Programs should include relevant police exam preparation topics (e.g., MPSC, physical training, law, general knowledge).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Royal Academy",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

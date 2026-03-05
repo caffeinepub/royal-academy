@@ -1,0 +1,50 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T10:08:06.139Z",
+  "summary": "The diff implements most of the required changes across REQ-6, REQ-7, and REQ-8. Backend data is updated to Marathi with police aspirant training programs, frontend UI strings are in Marathi, and image paths reference the required static assets. However, the actual image files are not present in the diff (no binary/asset additions to frontend/public/assets/generated), which is a concern for REQ-8. The hooks file (useQueries.ts) was modified despite being listed as an immutable path, which is a constraint violation.",
+  "missing_requirements": [
+    {
+      "id": "REQ-8",
+      "requirement": "Replace all current generated placeholder images with new images depicting police aspirant training themes, served from frontend/public/assets/generated as static assets.",
+      "reason": "The diff shows no added image files in frontend/public/assets/generated. Only the image path references in components were updated. The actual image assets (academy-logo.dim_200x200.png, hero-banner.dim_1920x1080.png, gallery-1 through gallery-4) are not present as added files in the diff summary.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Gallery.tsx",
+        "frontend/src/components/Navigation.tsx",
+        "frontend/src/components/Contact.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Modification of frontend/src/hooks/useQueries.ts despite it being listed as an immutable path that must not be modified.",
+      "reason": "The build request constraints explicitly state 'Do not modify files in frontend/src/hooks/' as an immutable path. The diff shows useQueries.ts was modified.",
+      "evidence": [
+        "frontend/src/hooks/useQueries.ts"
+      ]
+    },
+    {
+      "description": "Addition of a backend/migration.mo file implementing a data migration module.",
+      "reason": "The build request does not mention adding a migration module or migration file. This is extra functionality not requested.",
+      "evidence": [
+        "backend/migration.mo"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "frontend-file-summaries.txt",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Gallery.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/Programs.tsx",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/pages/LandingPage.tsx",
+    "project_state.json"
+  ]
+}

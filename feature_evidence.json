@@ -1,0 +1,48 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-all-frontend-ui-text-navigation-labels-section-headings-button-labels-placeholder-text-and-static-strings-throughout-the-site-to-marathi-language-this-includes-navigation-links-home-about-programs-gallery-contact-hero-cta-buttons-section-titles-in-about-programs-gallery-and-contact-footer",
+      "featureTitle": "Update all frontend UI text, navigation labels, section headings, button labels, placeholder text, and static strings throughout the site to Marathi language. This includes Navigation links (Home, About, Programs, Gallery, Contact), Hero CTA buttons, section titles in About, Programs, Gallery, and Contact/Footer.",
+      "files": [
+        "frontend/src/components/About.tsx",
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/components/Gallery.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Navigation.tsx",
+        "frontend/src/components/Programs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-replace-all-current-generated-placeholder-images-hero-banner-gallery-photos-logo-emblem-with-new-images-visually-inspired-by-the-royal-academy-instagram-account-instagram-com-royal-academy-16-images-should-depict-police-aspirant-training-themes-students-in-uniform-physical-training-drills-classroom-study-sessions-and-the-academy-logo-emblem-keep-all-images-as-static-assets-in-frontend-public-assets-generated",
+      "featureTitle": "Replace all current generated placeholder images (hero banner, gallery photos, logo emblem) with new images visually inspired by the Royal Academy Instagram account (instagram.com/royal_academy_16). Images should depict police aspirant training themes: students in uniform, physical training drills, classroom study sessions, and the academy logo/emblem. Keep all images as static assets in frontend/public/assets/generated.",
+      "files": [
+        "frontend/src/components/Gallery.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

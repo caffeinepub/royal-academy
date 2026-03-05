@@ -1,0 +1,90 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T10:08:06.143Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-6",
+        "summary": "Update all backend hardcoded data (academy name, tagline, description, contact info, and all course/program titles, descriptions, and categories) to Marathi language, reflecting Royal Academy as a training academy for police aspirants. Programs should include relevant police exam preparation topics (e.g., MPSC, physical training, law, general knowledge).",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Update all frontend UI text, navigation labels, section headings, button labels, placeholder text, and static strings throughout the site to Marathi language. This includes Navigation links (Home, About, Programs, Gallery, Contact), Hero CTA buttons, section titles in About, Programs, Gallery, and Contact/Footer.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/About.tsx",
+          "frontend/src/components/Programs.tsx",
+          "frontend/src/components/Gallery.tsx",
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/components/SectionHeader.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/About.tsx",
+          "frontend/src/components/Programs.tsx",
+          "frontend/src/components/Gallery.tsx",
+          "frontend/src/components/Contact.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Replace all current generated placeholder images (hero banner, gallery photos, logo emblem) with new images visually inspired by the Royal Academy Instagram account (instagram.com/royal_academy_16). Images should depict police aspirant training themes: students in uniform, physical training drills, classroom study sessions, and the academy logo/emblem. Keep all images as static assets in frontend/public/assets/generated.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Gallery.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Gallery.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/academy-logo.dim_200x200.png",
+    "frontend/public/assets/generated/gallery-1.dim_800x600.png",
+    "frontend/public/assets/generated/gallery-2.dim_800x600.png",
+    "frontend/public/assets/generated/gallery-3.dim_800x600.png",
+    "frontend/public/assets/generated/gallery-4.dim_800x600.png",
+    "frontend/public/assets/generated/hero-banner.dim_1920x1080.png",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Gallery.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/Programs.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/pages/LandingPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "kind": "build_request",
+  "title": "Update content to Marathi, police aspirants context, and Instagram-sourced imagery",
+  "projectName": "Royal Academy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Update all backend hardcoded data (academy name, tagline, description, contact info, and all course/program titles, descriptions, and categories) to Marathi language, reflecting Royal Academy as a training academy for police aspirants. Programs should include relevant police exam preparation topics (e.g., MPSC, physical training, law, general knowledge).",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "use content in marathi",
+          "it is training academy for police aspirants"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Academy name, tagline, and description are written in Marathi",
+        "All course titles and descriptions are in Marathi",
+        "Programs reflect police aspirant training topics (MPSC, physical fitness, law, GK, etc.)",
+        "Contact section content is in Marathi"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Update all frontend UI text, navigation labels, section headings, button labels, placeholder text, and static strings throughout the site to Marathi language. This includes Navigation links (Home, About, Programs, Gallery, Contact), Hero CTA buttons, section titles in About, Programs, Gallery, and Contact/Footer.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "use content in marathi"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All navigation links are in Marathi",
+        "Hero section heading, tagline, and CTA buttons are in Marathi",
+        "About, Programs, Gallery, and Contact section headers and body text are in Marathi",
+        "Footer copyright and attribution text is in Marathi",
+        "No English UI strings remain visible to the user"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Replace all current generated placeholder images (hero banner, gallery photos, logo emblem) with new images visually inspired by the Royal Academy Instagram account (instagram.com/royal_academy_16). Images should depict police aspirant training themes: students in uniform, physical training drills, classroom study sessions, and the academy logo/emblem. Keep all images as static assets in frontend/public/assets/generated.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "use images from their instagram account"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero banner image depicts a police training academy setting",
+        "Gallery images show training activities relevant to police aspirants",
+        "Logo/emblem image reflects Royal Academy branding style from their Instagram",
+        "All images are served from frontend/public/assets/generated as static assets",
+        "No broken image links remain on the page"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the existing visual theme (deep navy and gold color palette, serif typography)",
+    "Do not modify files in frontend/src/hooks/ (immutable paths)",
+    "Do not modify files in frontend/src/components/ui (immutable paths)",
+    "Do not route generated images through the backend"
+  ],
+  "nonGoals": [
+    "Adding a new page layout or redesigning the site structure",
+    "Integrating directly with the Instagram API",
+    "Adding authentication or user login",
+    "Adding new sections beyond the existing ones"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Royal Academy police training academy emblem with shield, star, and Marathi text, formal crest style (academy-logo.dim_200x200.png)",
+      "Wide banner of police aspirants in uniform standing in formation on a parade ground, dramatic lighting, patriotic atmosphere (hero-banner.dim_1920x1080.png)",
+      "Police aspirants doing physical fitness drills outdoors, morning light, energetic (gallery-1.dim_800x600.png)",
+      "Students in a classroom studying for competitive exams, books and notes, focused atmosphere (gallery-2.dim_800x600.png)",
+      "Police aspirants practicing drill commands on a training ground, uniformed instructor leading (gallery-3.dim_800x600.png)",
+      "Group photo of police aspirant batch in formal uniform, academy building in background (gallery-4.dim_800x600.png)"
+    ],
+    "edits": []
+  }
+}

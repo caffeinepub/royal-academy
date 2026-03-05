@@ -1,0 +1,14 @@
+{
+  "frontend/src/index.css": "Global styles with deep navy and gold OKLCH color palette, Google Fonts import for Playfair Display (serif) and Lato (sans-serif), smooth scroll behavior, and custom utility classes for the Royal Academy theme.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with navy/gold/cream color tokens mapped to OKLCH CSS variables, Playfair Display serif and Lato sans font families, custom box shadows, and fade-in-up animation keyframes.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching academy data (useAcademyData) and all programs (useAllPrograms) from the backend actor, updated to use the new Program type and getAllPrograms() method.",
+  "frontend/src/components/SectionHeader.tsx": "Reusable section header component with gold decorative flourishes (horizontal lines, dot divider), serif typography, and optional light/dark mode support.",
+  "frontend/src/components/Navigation.tsx": "Sticky responsive navigation bar with Marathi nav labels (मुख्यपृष्ठ, आमच्याबद्दल, अभ्यासक्रम, गॅलरी, संपर्क), updated logo image path to academy-logo.dim_200x200.png, and Marathi aria-labels.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with updated hero-banner.dim_1920x1080.png background, Marathi CTA buttons (अभ्यासक्रम पहा / अधिक जाणून घ्या), and Marathi ornament text for police training academy context.",
+  "frontend/src/components/About.tsx": "About section with Marathi section header, Marathi quote and body text about police training, and stats grid with Marathi labels (विद्यार्थी नोंदणीकृत, तज्ञ प्रशिक्षक, यश दर, वर्षांचा अनुभव).",
+  "frontend/src/components/Programs.tsx": "Programs section updated to use Program type (not Course), Marathi section header and filter buttons (सर्व), police-training-relevant category icons, and Marathi empty state message.",
+  "frontend/src/components/Gallery.tsx": "Gallery section with Marathi section header, Marathi alt text and captions for police training images, updated image paths, and Marathi lightbox navigation button aria-labels with prev/next controls.",
+  "frontend/src/components/Contact.tsx": "Contact and footer section with all text in Marathi (ईमेल करा, आम्हाला फॉलो करा, भेट द्या), updated logo image path, Marathi copyright text, and Marathi caffeine.ai attribution.",
+  "frontend/src/pages/LandingPage.tsx": "Main landing page updated to use useAllPrograms hook, pass programs prop to Programs component, and use Marathi fallback strings for academy name and tagline.",
+  "frontend/src/App.tsx": "Root application component that renders the LandingPage as the sole view."
+}
